@@ -1,0 +1,8 @@
+                                Scanner in = new Scanner(System.in); 
+		double hs=0;
+		double ss=0;
+		System.out.println("请输入华氏温度");
+		hs=in.nextDouble();
+		ss=(hs-32)*5/9;
+	                System.out.println((int)ss+".C");
+	    

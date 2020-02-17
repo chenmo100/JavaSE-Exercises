@@ -1,0 +1,17 @@
+        Scanner in = new Scanner(System.in);
+        int[][] p1 = new int[2][100];
+        int[][] p2 = new int[2][100];
+        int i=0,j=0;
+        for(j=0;j<100;j++)
+        for(i=0;i<100;i++)
+        {
+        	if(p1[0][j]==p2[0][i])
+        	{
+        		p1[1][j]=p1[1][j]+p2[1][i];
+        		p2[1][i]=0;
+        	}
+        }
+        for(i=0;;i++)
+        {
+        	
+        }

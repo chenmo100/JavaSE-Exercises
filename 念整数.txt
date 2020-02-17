@@ -1,0 +1,38 @@
+        Scanner in = new Scanner (System.in);
+        System.out.println("请输入一个整数:");
+        int n=in.nextInt();
+        int e=0;
+        int i;
+        for(i=Math.abs(n);i>0;e++)//算出整数有几位数，要有绝对值
+        {
+        	i=i/10;
+        }
+        int[] num = new int[e];//用来放整数的各个位数
+        if(n<0)
+        {
+        	System.out.print("fu");//输入是否负数
+        }
+        n=Math.abs(n);
+        for(int j=e;n>0;j--)//把每个位数放入数组
+        {
+        	num[j-1]=n%10;
+        	n=n/10;
+        }
+//        for(i=0;i<e;i++)
+//        System.out.print(num[i]);
+        for(i=0;i<e;i++)//输出汉字拼音
+    	{
+        	switch(num[i]){
+	    	case 0 :System.out.print(" ling");break;
+	    	case 1 :System.out.print(" yi");break;
+	    	case 2 :System.out.print(" er");break;
+	    	case 3 :System.out.print(" san");break;
+	    	case 4 :System.out.print(" si");break;
+	    	case 5 :System.out.print(" wu");break;
+	    	case 6 :System.out.print(" liu");break;
+	    	case 7 :System.out.print(" qi");break;
+	    	case 8 :System.out.print(" ba");break;
+	    	case 9 :System.out.print(" jiu");break;
+        	}
+    	}
+        

@@ -1,0 +1,25 @@
+        Scanner in = new Scanner(System.in);
+        int j=0;
+        int i=0;
+        int m,n;
+        int c;
+        int num=0;
+        int[] pn = new int[200];
+        H:
+        for(i=2,c=0;c<200;i++,c++)
+        {
+        	for(j=i;j==0;j--)
+        	{
+        		if((double)(j/i)==0)
+        			break H;
+        	}
+        	pn[c]=i;
+        	}
+        System.out.println("请输入n和m:");
+        n=in.nextInt();
+        m=in.nextInt();
+        for(;n<=m;n++)
+        {
+        	num=num+pn[n];
+        }
+        System.out.println(num);

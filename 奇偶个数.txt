@@ -1,0 +1,17 @@
+		Scanner in = new Scanner(System.in);
+		int i=0,a=0,b=0;
+		System.out.println("请输入数据");
+		i=in.nextInt();
+		while(i!=-1)
+		{   
+			if(i%2==0)
+			{
+				a++;
+			}
+			if(i%2==1)
+			{
+				b++;
+			}
+			i=in.nextInt();
+		}	
+		System.out.print(a+" "+b);

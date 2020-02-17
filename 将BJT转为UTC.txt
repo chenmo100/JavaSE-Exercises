@@ -1,0 +1,14 @@
+        Scanner in = new Scanner(System.in); 
+		int BJT=0;
+		int UTC=0;
+		System.out.println("请输入北京时间");
+		BJT=in.nextInt();
+		if(BJT>=800)
+		{
+			UTC=BJT-800;
+		}
+		else if(BJT>=100)
+		{
+			UTC=BJT+1600;
+		}
+	    System.out.println(UTC);

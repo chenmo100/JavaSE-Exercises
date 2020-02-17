@@ -1,0 +1,27 @@
+		Scanner in = new Scanner(System.in);
+		System.out.println("请输入范围在[0,1000000]的数字");
+        int i = in.nextInt();//输入的数
+        int num = 0;//二进制数
+        int c = 0;//i的位数
+        int n = 0;
+        int e = 0;
+        int bs = 0;
+        for(c=i;c>0;e++)//算出i有几位数
+        {
+        	c=c/10;
+        }
+        System.out.println("  "+e);
+        for(int j=0;j<e;j++)//算出二进制数字 e=6
+        {
+        	n=i%10;
+        	i=i/10;
+        	if((n+2)%2==(j+1)%2)
+        	{	
+        		num=num+(int)Math.pow(10, j);
+        	}
+        }
+
+        System.out.println("  "+num);
+        bs = Integer.valueOf("num", 2)
+        System.out.println("  "+bs);
+        
